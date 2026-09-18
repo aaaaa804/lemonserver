@@ -92,6 +92,7 @@
                 <li>광장주 - 레몬</li>
                 <li>부소유자 - 자몽, 암초</li>
                 <li>권한대행 - eolbulbaewo (발음대로 읽어보세요!)</li>
+                <li>총관리자 - 현무암</li>
             </ul>
         </div>
     </div>
@@ -111,9 +112,9 @@
             <ul>
                 <li>총으로 조준해서 레몬을 터뜨리면 됩니다!</li>
                 <li>점수는 터트린 레몬 1개당 점수 1개입니다!</li>
-                <li>레몬이 5개 이상 남아있으면 미니게임은 종료입니다.</li>
+                <li>선택한 난이도 기준 최대 레몬 수 이상 쌓이면 미니게임은 종료입니다.</li>
                 <li>점수가 높아질수록 레몬이 나오는 속도가 빨라집니다.</li>
-                <li>모바일로 하는것을 추전드립니다!</li>
+                <li>모바일로 하시는것을 추천드립니다!</li>
             </ul>
         </div>
     </div>
@@ -122,9 +123,15 @@
     <div class="card r">
         <div class="card-title">레몬 터뜨리기 미니게임</div>
         <div class="inner-content">
+            <!-- 난이도 선택 버튼 그룹 -->
+            <div class="difficulty-select">
+                <button class="diff-btn active" data-diff="normal">기본</button>
+                <button class="diff-btn" data-diff="hard">어려움</button>
+            </div>
+
             <div class="game-dashboard">
                 <span>점수: <b id="game-score">0</b></span>
-                <span>남은 레몬: <b id="lemon-count">0</b>/5</span>
+                <span>남은 레몬: <b id="lemon-count">0</b>/<span id="max-lemon-display">5</span></span>
                 <button id="start-game-btn" class="btn game-btn">게임 시작</button>
             </div>
             <div id="game-container">
