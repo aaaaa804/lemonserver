@@ -51,8 +51,8 @@
         },
         hard: {
             maxLemons: 25,
-            baseSpeed: 500,
-            minSpeed: 100,
+            baseSpeed: 600,
+            minSpeed: 200,
             stepScore: 10,
             stepSpeed: 100
         }
